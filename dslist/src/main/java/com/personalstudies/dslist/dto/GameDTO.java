@@ -20,8 +20,8 @@ public class GameDTO {
     }
 
     public GameDTO(Game entity) {
-        // BeanUtils.copyProperties(entity, this);
-        this.id = entity.getId();
+        BeanUtils.copyProperties(entity, this);
+        /* this.id = entity.getId();
         this.title = entity.getTitle();
         this.year = entity.getYear();
         this.genre = entity.getGenre();
@@ -29,8 +29,7 @@ public class GameDTO {
         this.score = entity.getScore();
         this.imgUrl = entity.getImgUrl();
         this.shortDescription = entity.getShortDescription();
-        this.longDescription = entity.getLongDescription();
-        // System.out.println("AQUIIII" + this.title);
+        this.longDescription = entity.getLongDescription(); */
     }
 
     public Long getId() {
