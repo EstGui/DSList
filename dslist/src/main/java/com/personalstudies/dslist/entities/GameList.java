@@ -14,8 +14,9 @@ public class GameList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    
-    public GameList() {}
+
+    public GameList() {
+    }
 
     public GameList(Long id, String name) {
         this.id = id;
@@ -61,5 +62,5 @@ public class GameList {
         } else if (!id.equals(other.id))
             return false;
         return true;
-    }    
+    }
 }

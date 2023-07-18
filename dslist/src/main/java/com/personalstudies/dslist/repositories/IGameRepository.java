@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.personalstudies.dslist.entities.Game;
 
-public interface IGameRepository extends JpaRepository<Game, Long>{
-    
+public interface IGameRepository extends JpaRepository<Game, Long> {
+
 }
